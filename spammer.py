@@ -32,7 +32,7 @@ def main(phone_num, delay, limit, country_code):
     (example: 6281323323232 with 62 prefix as the country code)
     """
     i = 0
-    click.secho(f'-- phone number: {phone_num}, country code: {country_code}',
+
                 fg='cyan')
     while i == 0 or i < limit:
         res, reason, wait = send_gac_req(phone_num, country_code)
